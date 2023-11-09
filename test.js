@@ -23,7 +23,7 @@ test("One Dollar should be 146,26 Yen", () =>{
     const expected = 3.5 * 156.5 / 1.07;
 
     // This is the comparison for the unit test 
-    expect(fromDollarToYen(3.5)).toBe(511.91588785046724);
+    expect(yens).toBe(expected);
 })
 
 test("One Yen should be a tiny amount of pounds ()", ()=>{
@@ -34,5 +34,5 @@ test("One Yen should be a tiny amount of pounds ()", ()=>{
 
     const expected = 20000 * 0.87 / 156.5;
 
-    expect(fromYenToPound(20000)).toBe(111.18210862619809);
+    expect(pounds).toBe(expected);
 })
